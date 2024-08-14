@@ -1,0 +1,230 @@
+.pagina-conversatii {
+    position: relative;
+    top: 120px;
+    left: 270px;
+    width: calc(100% - 330px);
+    height: calc(100vh - 180px);
+    z-index: 0;
+    padding: 30px;
+    background: rgb(202, 215, 250);
+    background: linear-gradient(180deg, rgba(202, 215, 250, 1) 0%, rgba(10, 45, 129, 0.619) 95%);
+  }
+  
+  .pagina-conversatii .upper-side .titlu-text h2,
+  .pagina-conversatii .upper-side .titlu-text p {
+    margin: 0px;
+  }
+  
+  .pagina-conversatii .upper-side .titlu-text p {
+    margin-top: 20px;
+    color: red;
+    font-size: 22px;
+  }
+  
+  .pagina-conversatii .discutii {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .pagina-conversatii .titlu {
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  
+  .pagina-conversatii .line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+  
+  .pagina-conversatii .chat-window .line {
+    width: 90%;
+  }
+  
+  .pagina-conversatii .bottom-side {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 75vh;
+  }
+  
+  .pagina-conversatii .conversatii-tab .conversatie {
+    display: flex;
+    flex-direction: row;
+    background-color: #6D76CD;
+    width: 400px;
+    height: 100px;
+    margin-top: 10px;
+    align-items: center;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .pagina-conversatii .conversatii-tab .conversatie .avatar {
+    margin: 10px;
+  }
+  .pagina-conversatii .conversatii-tab .conversatie .avatar .avatar-circle {
+width: 50px;
+height: 50px;
+  }
+  .pagina-conversatii .conversatii-tab .conversatie div {
+    margin: 0px;
+  }
+  
+  .pagina-conversatii .sender {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .pagina-conversatii .mesaj {
+    margin: 20px;
+    font-size: 18px;
+  }
+  
+  .pagina-conversatii .chat-window {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    border-left: solid black 2px;
+  }
+  
+  .pagina-conversatii .chat-header {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .pagina-conversatii .chat-header h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .pagina-conversatii .chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pagina-conversatii .message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    max-width: 80%;
+  }
+  
+  .pagina-conversatii .message .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0a2d81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .pagina-conversatii .message p {
+    background-color: #f1f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+    max-width: 70%;
+  }
+  
+  .pagina-conversatii .message.sent {
+    align-self: flex-end;
+    justify-content: end;
+
+  }
+  .pagina-conversatii .message.sent .avatar {
+margin-left: 20px;
+
+  }
+  
+  
+  .pagina-conversatii .message.received {
+    align-self: flex-start;
+  }
+  
+  .pagina-conversatii .chat-input {
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    width: 90%;
+    align-items: end;
+  }
+  
+  .pagina-conversatii .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    height: 40px;
+  }
+  
+  .pagina-conversatii .chat-input button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagina-conversatii .chat-input button:hover {
+  background-color: #0056b3;
+}
+.pagina-conversatii .creare-grup {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.pagina-conversatii .creare-grup div {
+    width: 250px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 0 20px; 
+}
+
+.pagina-conversatii .creare-grup p {
+    margin: 0;
+    flex-grow: 1; 
+}
+
+.pagina-conversatii .creare-grup .icon-adaugare {
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+}
+
+.pagina-conversatii .bara-de-cautare {
+  display: flex;
+  margin:20px 5px;
+}
+.pagina-conversatii .bara-de-cautare img {
+  width: 20px;
+  margin-left: 20px;
+}
+
+.pagina-conversatii .bara-de-cautare input {
+  border-radius: 12px;
+  border: none;
+  width: 200px;
+  height: 20px;
+}

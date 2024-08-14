@@ -1,0 +1,134 @@
+.pagina-inregistrare {
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  background: rgb(202, 215, 250);
+  background: linear-gradient(
+    -180deg,
+    rgba(202, 215, 250, 1) 0%,
+    rgba(14, 59, 168, 1) 76%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+.pagina-inregistrare .bara-sus {
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  background-color: #0a2d81;
+}
+
+.pagina-inregistrare .logo {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  left: 46%;
+}
+
+.pagina-inregistrare img {
+  width: 100px;
+}
+
+.pagina-inregistrare .continut {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagina-inregistrare .forma-inregistrare {
+  width: 600px;
+  height: 600px; 
+  padding: 10px 35px;
+  background-color: #0a2d81;
+}
+
+.pagina-inregistrare h2 {
+  color: white;
+  margin: 0px;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.pagina-inregistrare form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-inregistrare input,
+select {
+  height: 30px;
+  border-radius: 5px;
+  width: 80%;
+  border: 0px;
+}
+
+.pagina-inregistrare label {
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.pagina-inregistrare .nume, 
+.pagina-inregistrare .prenume, 
+.pagina-inregistrare .email, 
+.pagina-inregistrare .parola, 
+.pagina-inregistrare .confirmare-parola, /* New element */
+.pagina-inregistrare .facultate, 
+.pagina-inregistrare .specializare, 
+.pagina-inregistrare .an {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.pagina-inregistrare button {
+  width: 200px;
+  background-color: white;
+  padding: 10px;
+  color: #0a2d81;
+  border-radius: 5px;
+  margin-top: 30px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.pagina-inregistrare button:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+  text-decoration-color: #0a2d81;
+}
+.pagina-inregistrare .buton {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: end;
+}
+
+.pagina-inregistrare .forma-inregistrare .autentificare {
+  display: flex;
+  justify-content: end;
+}
+
+.pagina-inregistrare .forma-inregistrare p {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pagina-inregistrare .error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagina-inregistrare .error {
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}

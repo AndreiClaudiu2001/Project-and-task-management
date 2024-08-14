@@ -1,0 +1,121 @@
+.pagina-conectare {
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  background: rgb(202, 215, 250);
+  background: linear-gradient(
+    -180deg,
+    rgba(202, 215, 250, 1) 0%,
+    rgba(14, 59, 168, 1) 76%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+.pagina-conectare .bara-sus {
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  background-color: #0a2d81;
+}
+
+.pagina-conectare .logo {
+  display: flex;
+
+  position: absolute;
+  top: 30px;
+  left: 46%;
+}
+
+.pagina-conectare img {
+  width: 100px;
+}
+
+.pagina-conectare .continut {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.pagina-conectare .forma-conectare {
+  width: 600px;
+  height: 380px;
+
+  padding: 10px 35px;
+  background-color: #0a2d81;
+}
+.pagina-conectare h2 {
+  color: white;
+  margin: 0px;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.pagina-conectare form {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-conectare input,
+.pagina-conectare label,
+.pagina-conectare button {
+  margin-top: 20px;
+  color: white;
+}
+.pagina-conectare input {
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: black;
+  border: 0px;
+}
+
+.pagina-conectare label {
+  font-size: 16px;
+}
+
+.pagina-conectare .linie {
+  margin-top: 30px;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.pagina-conectare button {
+  width: 200px;
+  background-color: white;
+  padding: 10px;
+  color: #0a2d81;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 30px;
+  left: calc(100% - 400px);
+  border: 0px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.pagina-conectare button:hover {
+  transform: scale(1.05); /* Mărește puțin butonul */
+  text-decoration: underline;
+  text-decoration-color: #0a2d81;
+}
+.pagina-conectare .forma-conectare .inregistrare {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.pagina-conectare .forma-conectare p {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pagina-conectare .error {
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #0a2d81;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.navbar p {
+  color: white;
+  margin: 20px;
+  padding: 0;
+  font-size: 18px;
+}
+.navbar .right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .right-side p {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar .sigla-usv {
+  margin: 15px;
+  width: 220px;
+}
+
+.navbar .setting-icon {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.navbar link {
+  color: white;
+}
+
+.navbar .modal-setari {
+  background-color: #0a2d81;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  padding: 10px;
+  border-color: aliceblue;
+  border-width: 3px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  z-index: 1000;
+  width: 325px;
+}
+
+.navbar .modal-setari div {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.navbar .modal-setari img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.navbar .modal-setari .setting-icon {
+  margin: 0px;
+}
+
+.navbar .modal-setari p {
+  color: white;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+

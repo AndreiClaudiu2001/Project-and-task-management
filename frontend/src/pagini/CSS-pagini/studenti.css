@@ -1,0 +1,96 @@
+.admin-studenti{
+    position: relative;
+    top: 120px;
+    left: 270px;
+    width: calc(100% - 330px);
+    height: calc(100vh - 180px);
+    z-index: 0;
+    padding: 30px;
+    background: rgb(202,215,250);
+background: linear-gradient(180deg, rgba(202,215,250,1) 0%, rgba(10,45,129,0.6194852941176471) 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.admin-studenti .bara-de-cautare {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .admin-studenti .info-pagina {
+    margin-left: 20px;
+  }
+  
+  .admin-studenti .bara-de-cautare img {
+    width: 20px;
+    margin-left: 20px;
+  }
+  
+  .admin-studenti .bara-de-cautare input {
+    border-radius: 12px;
+    border: none;
+    width: 200px;
+    height: 20px;
+  }
+  
+  .admin-studenti thead {
+    background-color: #b1b8f5;
+  
+    width: 100%;
+  }
+  .admin-studenti tbody {
+    background-color: white;
+ 
+    
+  }
+  
+  .admin-studenti .delete-icon{
+    cursor: pointer;
+  }
+  .admin-studenti th {
+    padding: 20px;
+    width: 300px;
+    text-align: start;
+    font-size: 20px;
+  }
+
+  .admin-studenti th:nth-child(5) {
+    text-align: center;
+  }
+  
+  .admin-studenti table {
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+  .admin-studenti tr, .admin-studenti td {
+    padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  .admin-studenti tr {
+    width: 200px;
+    text-align: start;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+  }
+  .admin-studenti th:nth-child(5) {
+    text-align: center;
+  }
+  
+  
+  .admin-studenti .filters{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .admin-studenti .filters select{
+    width: 500px;
+  }
+  .admin-studenti .filters select:nth-child(3)
+  {
+    width: 200px;
+  }
+

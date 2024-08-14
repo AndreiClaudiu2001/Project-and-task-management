@@ -1,0 +1,105 @@
+.admin-facultati {
+    position: relative;
+    top: 120px;
+    left: 270px;
+    width: calc(100% - 330px);
+    height: calc(100vh - 180px);
+    z-index: 0;
+    padding: 30px;
+    background: rgb(202,215,250);
+    background: linear-gradient(180deg, rgba(202,215,250,1) 0%, rgba(10,45,129,0.6194852941176471) 95%);}
+.admin-facultati  thead {
+    background-color: #b1b8f5;
+  
+    width: 100%;
+  }
+  .admin-facultati  tbody {
+    background-color: white;
+  }
+  
+  .admin-facultati th {
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .admin-facultati th:nth-child(1)
+  {
+    text-align: start;
+  }
+  .admin-facultati  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .admin-facultati  tr {
+    width: 200px;
+    text-align: start;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+  }
+  .admin-facultati td {
+    padding: 20px;
+  }
+  .admin-facultati .actiuni {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+
+  }
+  .admin-facultati .edit-icon,
+  .admin-facultati .delete-icon {
+    cursor: pointer;
+    margin: 0px 5px;
+  }
+  .admin-facultati .edit-icon img {
+    width:30px
+  }
+ .edit-icon:hover,
+  .admin-facultati .delete-icon:hover {
+    transform: scale(1.1);
+  }
+
+
+  .admin-facultati .bara-de-cautare {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  
+  .admin-facultati .bara-de-cautare img {
+    width: 20px;
+    margin-left: 20px;
+  }
+  
+  .admin-facultati .bara-de-cautare input {
+    border-radius: 12px;
+    border: none;
+    width: 250px;
+    height: 20px;
+  }
+  .admin-facultati .creare-facultate {
+    width: 180px;
+    height: 30px;
+    background-color: #4542da;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .admin-facultati .creare-facultate .icon-adaugare img{
+    width: 35px;
+  }
+  .admin-facultati .upper-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .admin-facultati .creare-facultate p {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+  }

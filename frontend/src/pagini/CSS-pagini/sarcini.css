@@ -1,0 +1,358 @@
+.pagina-sarcini {
+  position: relative;
+  top: 120px;
+  left: 270px;
+  width: calc(100% - 330px);
+  height: calc(100vh - 180px);
+  z-index: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.pagina-sarcini::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../public/ai-sarcini.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8; 
+  z-index: -1;
+}
+
+.pagina-sarcini .upper-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagina-sarcini .upper-side p {
+  color: gray;
+}
+
+.pagina-sarcini .creare-sarcina {
+  width: 180px;
+  height: 30px;
+  background-color: #4542da;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.pagina-sarcini .creare-sarcina p {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+.pagina-sarcini .bottom-side {
+  margin: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  overflow: hidden;}
+
+.tasks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll; 
+  max-height: 100%; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.tasks::-webkit-scrollbar {
+  display: none; 
+}
+
+.pagina-sarcini .titlu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagina-sarcini .titlu h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.pagina-sarcini .numar {
+  background-color: #4542da;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagina-sarcini .numar p {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+}
+
+.pagina-sarcini .div_sarcina {
+  position: relative;
+  margin: 10px 40px;
+  max-width: 400px;
+}
+
+.pagina-sarcini .buton_status_stanga,
+.pagina-sarcini .buton_status_dreapta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pagina-sarcini .buton_status_stanga {
+  left: -30px;
+}
+
+.pagina-sarcini .buton_status_dreapta {
+  right: -30px;
+}
+
+.pagina-sarcini .div_sarcina:hover .buton_status_stanga,
+.pagina-sarcini .div_sarcina:hover .buton_status_dreapta {
+  opacity: 1;
+}
+
+.pagina-sarcini .buton_status_stanga:hover,
+.pagina-sarcini .buton_status_dreapta:hover {
+  background-color: #ccc;
+}
+
+.pagina-sarcini .buton_status_stanga img,
+.pagina-sarcini .buton_status_dreapta img {
+  width: 20px;
+  height: 20px;
+}
+
+.pagina-sarcini .sarcina {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pagina-sarcini .titlu-sarcina {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pagina-sarcini .edit-stergere-sarcina {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.pagina-sarcini .edit-stergere-sarcina img{
+  cursor: pointer;
+}
+.pagina-sarcini .titlu-sarcina h3 {
+  font-size: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.pagina-sarcini .titlu-sarcina img {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.pagina-sarcini .deadline-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 370px;
+}
+
+.pagina-sarcini .deadline-avatar img {
+  width: 30px;
+  height: 30px;
+}
+
+.pagina-sarcini .deadline-avatar p {
+  margin: 0;
+}
+
+.pagina-sarcini .deadline-avatar .avatar {
+  display: flex;
+}
+
+.pagina-sarcini .deadline {
+  display: flex;
+  align-items: center;
+}
+
+.pagina-sarcini .deadline p {
+  margin-left: 10px;
+}
+
+.pagina-sarcini .modal {
+  position: absolute;
+  z-index: 1;
+  width: 600px;
+  height: auto;
+  left: 30%;
+  top: 10%;
+  border: solid black;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: white;
+}
+
+.pagina-sarcini.continut-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%; 
+}
+
+.pagina-sarcini form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.pagina-sarcini form #titlu {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.pagina-sarcini form #descriere {
+  height: 120px;
+  border-radius: 5px;
+}
+
+.pagina-sarcini .proiect {
+  display: flex;
+  align-items: baseline;
+}
+
+.pagina-sarcini .proiect #proiect {
+  margin-left: 20px;
+  width: 200px;
+  padding: 5px;
+}
+
+.pagina-sarcini .termen #termen {
+  margin-left: 64px;
+  width: 185px;
+  padding: 5px;
+}
+
+.pagina-sarcini .studenti #studenti {
+  margin-left: 44px;
+  width: 185px;
+  padding: 5px;
+}
+
+.pagina-sarcini form label,
+.pagina-sarcini form div {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: black;
+}
+
+.pagina-sarcini .butoane-modal {
+  display: flex;
+  justify-content: end;
+}
+
+.pagina-sarcini .buton-creare {
+  background-color: #88d34e;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pagina-sarcini .buton-anulare {
+  background-color: #ea1616;
+  margin-right: 20px;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pagina-sarcini .selected-members-container {
+  max-height: 80px;
+  width: auto; 
+  overflow-y: auto;
+  border: 1px solid #ddd; 
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.pagina-sarcini .selected-member {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px;
+}
+
+.pagina-sarcini .selected-member span,
+.pagina-sarcini .selected-member button {
+  font-size: 14px;
+}
+
+.pagina-sarcini .selected-member button {
+  padding: 2px 5px; 
+  font-size: 12px;
+  width: auto; 
+  height: auto; 
+  color: white;
+  background-color: red;
+}
+
+
+.pagina-sarcini .error{
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;  
+}

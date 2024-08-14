@@ -1,0 +1,67 @@
+.proiect-details-modal {
+  position: relative;
+  width: 50%;
+  left: 23%;
+  top: -10%;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid #b1b8f5;
+  border-radius: 10px;
+  z-index: 1000;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proiect-details-modal .descriere-proiect p,
+.proiect-details-modal .titlu p {
+  color: black;
+  margin: 0px 50px;
+  font-size: 16px;
+}
+
+.proiect-details-modal ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.proiect-details-modal li {
+  background-color: #cad7fa;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  margin-right: 20px;
+}
+
+.proiect-details-modal button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.proiect-details-modal .proiect-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.proiect-details-modal .mesaj-informativ {
+  color: gray;
+}
+
+.proiect-details-modal .descriere-proiect,
+.proiect-details-modal .titlu {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.creare-avatar .avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2px;
+}
+
+.creare-avatar .avatar-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #0a2d81;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creare-avatar .avatar-circle p {
+  color: #fff;
+  font-size: 12px; 
+  font-weight: bold;
+  margin: 0; 
+}

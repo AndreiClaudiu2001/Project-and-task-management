@@ -1,0 +1,144 @@
+.termeni-container {
+  position: relative;
+  top: 120px;
+  left: 270px;
+  width: calc(100% - 330px);
+  height: calc(100vh - 180px);
+  z-index: 0;
+  padding: 30px;
+  background: rgb(202, 215, 250);
+  background: linear-gradient(
+    180deg,
+    rgba(202, 215, 250, 1) 0%,
+    rgba(10, 45, 129, 0.6194852941176471) 95%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+.termeni-container h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.termeni-container .text-actualizare {
+  font-size: 14px;
+  color: gray;
+}
+
+.termeni-lista {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.termeni-container form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  bottom: 0;
+}
+
+.termeni-container form div {
+  display: flex;
+  justify-content: end;
+  margin: 3px;
+}
+
+.termeni-container form div:nth-child(3) {
+  justify-content: center;
+}
+
+.termeni-container h3,
+.termeni-container p {
+  color: #0a2d81;
+  font-size: 24px;
+  margin: 0px;
+}
+
+.termeni-container .termen-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.termeni-container h3 {
+  cursor: pointer;
+}
+
+.termeni-container p {
+  font-size: 18px;
+  margin: 0px;
+}
+
+.termeni-container form label {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.termeni-container .termen-item button {
+  width: 180px;
+  height: 30px;
+  background-color: #4542da;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+.termeni-container .termen-item button:nth-child(2) {
+  background-color: rgb(185, 47, 47);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.termeni-container form input[type="text"],
+.termeni-container form textarea {
+  width: 90%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.termeni-container form textarea {
+  height: 80px;
+}
+
+.termeni-container form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.termeni-container form button:hover {
+  background-color: #45a049;
+}
+
+.termeni-container .termen-item-student {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.termeni-container .termen-item-student h3 {
+  margin: 20px;
+}
